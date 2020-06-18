@@ -119,3 +119,44 @@ mc config host add minio-1592405296-local http://localhost:9000 AKIAIOSFODNN7EXA
 Added `minio-1592405296-local` successfully.
 ```
 
+
+
+## 打包Chart
+
+克隆 https://github.com/zknyy/helm-hello-world 到本地，进入目录
+
+执行检查
+
+```shell
+helm lint --strict helloworld-chart
+```
+
+得到
+
+```
+==> Linting helloworld-chart
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+```
+
+执行打包
+
+```shell
+helm package helloworld-chart 
+```
+
+得到
+
+```shell
+Successfully packaged chart and saved it to: /Users/demo/git/helm-hello-world/helloworld-chart-0.1.0.tgz
+```
+
+## 上传 [TODO]
+
+执行
+
+```
+
+```
+
